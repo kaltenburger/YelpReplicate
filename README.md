@@ -7,9 +7,9 @@ This repository contains all the corresponding code to recreate tables and figur
 ### Directions
 1. Save the raw Yelp data called 'instances_mergerd_seattle.csv' from Kang et al. 2013 <a href="http://www3.cs.stonybrook.edu/~junkang/hygiene/">[link]</a> to the data folder in this repo.
 
-2. Code organization assumes [placeholder]
+2. Code organization assumes [FINISH]
 
-3. How to run code where folder organization is briefly described below:
+3. How to run code where folder organization is briefly described below: [FINISH]
 
 
 All code was writted and tested for Python 2.712
