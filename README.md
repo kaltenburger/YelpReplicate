@@ -9,6 +9,9 @@ This repository contains all the corresponding code to recreate tables and figur
 
 2. How to run code where folder organization is briefly described below: 
   * ./data/: includes a link to the original data subsetted to routine-inspections only as used for the re-analysis portion of the paper and includes folders for storing features from the routine-only subsetted dataset.
+  * ./code/0_original_analysis_restaurant_hygiene/: placeholder for including original Kang et al. code.
+  * ./code/1_re-analysis/: code for re-analysis.
+  * ./figs/: folder for all figures
 
 
 All code was writted and tested for Python 2.712
