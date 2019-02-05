@@ -12,6 +12,7 @@ This repository contains all the corresponding code to recreate tables and figur
   * ./code/0_original_analysis_restaurant_hygiene/: placeholder for including original Kang et al. code.
   * ./code/1_re-analysis/: code for re-analysis.
   * ./figs/: folder for all figures
+  * ./appendix/: folder contains document with supplemental figures that would not fit in main paper.
 
 
 All code was writted and tested for Python 2.712
