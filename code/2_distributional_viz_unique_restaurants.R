@@ -93,7 +93,7 @@ tN$Freq <- tN$Freq/sum(tN$Freq)
 tN$Var1 <- as.character(tN$Var1)
 
 barplot(tN$Freq, space = 0.5, col = rgb(0,0,0,0.6), border = 'white', names.arg = tN$Var1, #ylim = c(0,550),
-        main = 'Prior Analysis', ylab = 'Proportion',#'Density', 
+        main = 'Original Analysis', ylab = 'Proportion',#'Density', 
         xlab = 'ID frequency', ylim = c(0, 1))#, xlim = c(1,5))
 abline(h=0, col = 'black')
 
