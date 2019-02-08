@@ -12,19 +12,6 @@ setwd('~/Dropbox/YelpReplicate/code/GithubWWW2019/YelpReplicate/code/0_original_
 original_df <- read.csv('./output/ids_seattle_yelp_00.csv',
                         header = FALSE)
 
-## one other spot-check
-#original_df <- read.csv('../old/a_original_analysis_execution_type_one_testing/output/ids_seattle_yelp_.csv', header = FALSE)
-#head(original_df)
-#nrow(original_df[307:612,])
-#par(mar=c(3,3,2,0.5), mgp=c(1.5,0.5,0),tcl=-0.3)
-#tN <- table(as.array(table(as.character(original_df[307:612,'V1']))))
-#tN <- as.data.frame(tN)
-#tN$Freq <- tN$Freq/sum(tN$Freq)
-#tN$Var1 <- as.character(tN$Var1)
-
-#barplot(tN$Freq, space = 1.5, col = 'gray', border = 'white', names.arg = tN$Var1, #ylim = c(0,550),
-#        main = 'Original Analysis \n Hygienic Restaurants', ylab = 'Density', 
-#        xlab = 'Occurrences of Restaurant IDs', ylim = c(0, 1))#, xlim = c(1,5))
 
 full_df <- read.csv('../../dataset/instances_mergerd_seattle.csv')
 sum(full_df$inspection_penalty_score==-1)
@@ -144,21 +131,3 @@ for(j in 1:10000){
 }
 mean(random_duplicates)
 
-
-
-
-
-## testing only sanity check
-#dups <- read.csv('../c_random_hygienic/output/ids_seattle_yelp_00.csv',
-#                        header = FALSE)
-#layout(matrix(c(1,2),1,2))
-#par(mar=c(3,3,2,0.5), mgp=c(1.5,0.5,0),tcl=-0.3)
-#tN <- table(as.array(table(as.character(dups[307:612,'V1']))))
-#tN <- as.data.frame(tN)
-#tN$Freq <- tN$Freq/sum(tN$Freq)
-#tN$Var1 <- as.character(tN$Var1)
-
-#barplot(tN$Freq, space = 0.5, col = rgb(0,0,0,0.6), border = 'white', names.arg = tN$Var1, #ylim = c(0,550),
-#        main = 'Prior Analysis', ylab = 'Proportion',#'Density', 
-#        xlab = 'ID frequency', ylim = c(0, 1))#, xlim = c(1,5))
-#abline(h=0, col = 'black')
