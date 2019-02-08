@@ -15,7 +15,7 @@ This repository contains all the corresponding code to recreate tables and figur
   * ./appendix/: folder contains document with supplemental figures that would not fit in main paper.
 
 
-All code was writted and tested for Python 2.712
+All code was writted and tested for Python 2.7.12.
 
 ### Authors
 * Kristen M. Altenburger, kaltenb@stanford.edu
