@@ -41,17 +41,7 @@ window=3  #try smaller
 min_count=5 #3-5
 model = Doc2Vec(documents_train, vector_size=ndim, window=window, min_count=min_count, seed=123, workers = 1)#, workers=4)
 
-#model = Doc2Vec(documents_train, vector_size=ndim, window=window, min_count=min_count, workers=4)
 
-
-#fname = get_tmpfile("my_doc2vec_model")
-#model.save(fname)
-#model = Doc2Vec.load(fname)
-#model.delete_temporary_training_data(keep_doctags_vectors=True, keep_inference=True)
-
-#x_train_d2v = map(model.infer_vector,cleaned_review_df['texts'])
-#embedding_df = pd.DataFrame(np.matrix(x_train_d2v))
-#embedding_df['inspection_id']=cleaned_review_df.inspection_id
 steps = 20 #None
 def vec_for_learning(doc2vec_model, tagged_docs):
     sents = tagged_docs.values

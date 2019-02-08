@@ -83,7 +83,7 @@ for( i in 1:length(files)){
 
 
 ## 1) Overall -- this is what's reported in the text
-# all w/o embedding
+# all w/o embedding, review counts, or ratings
 mean(compare_with_without_embedding$mse[compare_with_without_embedding$feature==unique(compare_with_without_embedding$feature)[1]])
 #[1] 183.6095
 as.character(unique(compare_with_without_embedding$feature)[1])
@@ -122,12 +122,12 @@ points(mean(baseline$mse), 1.5, pch = '|',
 count <- 0
 
 labels <- c('Baseline','Review count', 'Neg. review count', 'Cuisine',
-            'ZIP code', 'Avg. review rating', 'Inspection history','Yelp review')
+            'ZIP code', 'Avg. review rating', 'Inspection history','Yelp review text')
 
 for(j in unique(randomRF$feature)){
     #print(as.character(j))
   #print('')
-  if(labels[count+2]=="Yelp review"){
+  if(labels[count+2]=="Yelp review text"){
       my.col <- rgb(0,0,1,0.4)
   } else if(labels[count+2]=="Inspection history"){
       print("EWARS")
