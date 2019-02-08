@@ -14,7 +14,6 @@ setwd('~/Dropbox/YelpReplicate/code/GithubWWW2019/YelpReplicate/code/1_re-analys
 baseline <- read.csv('kang_results_baseline.csv')
 random_other_RF <- read.csv('kang_results_regression_otherFeatures_SEED_RF_search_random.csv')
 random_nembed_RF <- read.csv('kang_results_regression_februaryCVuniversalembedding_SEED_ndim_100_window_5_min_count_3RF_search_random.csv') #'kang_results_regression_octoberCVuniversalembedding_ndim_100_window_5_min_count_3RF_search_random.csv')
-random_nembed_RF2 <- read.csv('kang_results_regression_februaryCVuniversalembedding_SEED_with_steps_ndim_100_window_5_min_count_3RF_search_random.csv') #'kang_results_regression_octoberCVuniversalembedding_ndim_100_window_5_min_count_3RF_search_random.csv')
 
 random_nembed_RF$feature <- 'embed'
 randomRF <- rbind(random_other_RF, random_nembed_RF)
