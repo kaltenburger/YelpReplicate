@@ -97,7 +97,7 @@ subset = np.array(dta_analysis.columns)[np.array(dta_analysis.columns)!='inspect
 subset=subset[subset!='inspection_id']
 counter = 0
 feature_set_without_embedding = subset[~np.in1d(subset,embedding_df.columns[embedding_df.columns!='inspection_id'])]
-feature_set_without_embedding = feature_set_without_embedding[~np.in1d(feature_set_without_embedding,[ 'review_count', 'non_positive_review_count', 'average_review_rating'])]
+#feature_set_without_embedding = feature_set_without_embedding[~np.in1d(feature_set_without_embedding,[ 'review_count', 'non_positive_review_count', 'average_review_rating'])]
 
 feature_set = [[feature_set_without_embedding], [subset]]
 
